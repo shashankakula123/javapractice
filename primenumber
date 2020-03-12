@@ -1,0 +1,60 @@
+public class perform {
+    static int n;
+    int count = 0;
+    static boolean isprime = true;
+
+
+    perform() {
+
+    }
+
+    boolean prime(int n) {
+
+        for (int i = 1, count = 0; i <= 100; i++) {
+
+            if (n % i == 0) {
+                count++;
+            }
+            if (count == 2 || count == 1) {
+
+                isprime = true;
+            } else {
+                isprime = false;
+
+            }
+            if (count == 1) {
+
+                isprime = true;
+            }
+
+        }
+
+        return isprime;
+
+    }
+
+
+    public static void main(String[] args) {
+
+        perform obj = new perform();
+        obj.count = 0;
+        obj.n = 70;
+        isprime = obj.prime(n);
+
+        if (isprime) {
+            System.out.print(n);
+            System.out.println(" is prime");
+        }
+
+        if (!isprime) {
+            System.out.print(n);
+            System.out.print(" is not prime");
+        }
+
+
+    }
+}
+
+
+
+
