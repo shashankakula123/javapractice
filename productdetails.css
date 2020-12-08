@@ -1,0 +1,469 @@
+body {
+    margin: 0;background-color: #1c1b1e;
+    font-family: 'Open Sans', sans-serif;
+}
+#topbar {
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background: linear-gradient(to right, #FE4D70, #FFB747);
+    z-index: 10;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%
+}
+
+#left-menu {
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}
+#logo:hover{  color: yellow;
+    transform: scale(1.1,1.1);
+}
+
+#logo > a {  color: yellow;
+    text-decoration: none;
+   
+    cursor: pointer;
+}
+
+#logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+}
+
+#logo span {
+    font-weight: 800;
+}
+
+#left-menu > a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}#left-menu > a:hover{  color: yellow;
+    transform: scale(1.1,1.1);
+}
+
+#search-wrapper {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+#search-box:hover{
+    background-color: #1c1b1e;
+}
+
+#search-wrapper > i {
+    position: absolute;
+    color: #999900;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999900;
+    opacity: 1; /* Firefox */
+  }
+
+
+#search-box {
+    width: 100%;
+   
+  background-color: transparent;
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}
+
+#right-menu {
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#cart-wrapper {
+    position: relative;
+    margin-right: 32px;
+}
+#cart-wrapper:hover{
+    transform: scale(1.3,1.3);
+}
+
+
+#cart-count {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+
+#cart-wrapper > a {
+    text-decoration: none;
+    color: black;
+}
+
+#cart-wrapper i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#right-menu > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+main {
+    /*background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);*/
+    background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+    width: 100%;
+    
+    min-height: 80vh;
+    box-sizing: border-box;
+    padding-top: 100px;
+   
+}
+
+#edyoda-projects-logo {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: whitesmoke;
+}
+
+footer {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+    background: linear-gradient(59deg, #3A6073, #16222A);
+    color: white;
+  
+  }
+  
+  footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+  }
+  
+  footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+  }
+  
+  .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+  }
+  
+  .footer-middle {
+    padding-top: 2em;
+    color: white;
+  }
+  
+  
+  /*SOCİAL İCONS*/
+  
+  /* footer social icons */
+  
+  ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  
+  ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
+  
+  
+  /* footer social icons */
+  
+  .social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+  }
+  
+  .social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+  }
+  
+  .social-network a.icoFacebook:hover i,
+  .social-network a.icoLinkedin:hover i {
+    color: #fff;
+  }
+  
+  .social-network a.socialIcon:hover,
+  .socialHoverClass {
+    color: #44BCDD;
+  }
+  
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+  
+  .social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .social-circle li a:hover i,
+  .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  
+  .social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  
+  .social-network a {
+    background-color: #F9F9F9;
+  }
+  
+.product-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2% 8%;
+    box-sizing: border-box;
+}
+
+#product-image {
+    width: 40%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    align-self: flex-start;
+}
+
+#product-preview {
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #009688;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+#product-details {
+    align-self: flex-start;
+    width: 60%;
+    box-sizing: border-box;
+    z-index: 5;
+    color: whitesmoke;
+}
+
+#product-images {
+    display: flex;
+}
+
+#product-images > img {
+    width: 50px;
+    border-radius: 10px;
+    margin: 0 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px;
+    /* border: 2px solid gray; */
+}
+
+.active-image {
+    border-radius: 10px;
+    box-sizing: content-box;
+    border: 2px solid #009688;
+}
+
+#product-images > img:first-of-type {
+    margin-left: 0;
+}
+
+#product-title {
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+    color: whitesmoke;
+}
+
+#product-brand {
+    font-weight: 600;
+    color: black;
+    opacity: 0.6;
+    margin: 0;
+    margin-top: 8px;
+    color: whitesmoke;
+}
+
+.section-heading {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 36px;
+    font-weight: 400;
+    color: whitesmoke;
+    margin-bottom: 16px;
+}
+
+#btn-add-to-cart {
+    background-color: #009688;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 18px 36px;
+    border-radius: 6px;
+    margin-top: 36px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    color: white;
+    transition: transform 200ms;
+}
+
+.bigger {
+    transform: scale(1.1, 1.1);
+}
+
+.section-heading:first-of-type {
+    margin-bottom: 0;
+}
+
+#product-price {
+    max-width: 500px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    font-weight: 600;
+  color:whitesmoke;
+    margin:0;
+    display: inline-block;
+}
+
+#description {
+    max-width: 500px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    font-weight: 400;
+  color:whitesmoke;
+}
+  
+}@media only screen and (max-width: 800px) {
+   
+    footer {
+     width: 100%;
+     background-color: #1c1b1e; 
+     display:block;
+     justify-content: center;
+     box-sizing: border-box;
+     padding: 4% 8%;
+  }footer > h4 :first-of-type{
+      padding-left: 60px;
+      
+  }footer > h4{
+      padding-left: 0px;
+      
+  }
+    li{
+      display:none
+    }
+}
+   
+@media only screen and (max-width: 800px) {
+    div.product-grid {
+      display: flex;
+      flex-direction:column;
+      
+      
+  }
+    
+    div.product-card{
+      width:700px;
+      max-width:80%;
+    
+    }
+    footer {
+     width: 100%;
+     background-color: #1c1b1e; 
+     display:block;
+     justify-content: center;
+     box-sizing: border-box;
+     padding: 4% 8%;
+  }footer > h4 :first-of-type{
+      padding-left: 60px;
+      
+  }footer > h4{
+      padding-left: 0px;
+      
+  }
+    li{
+      display:none
+    }
+    
+   
+    
+  }
+  @media only screen and (max-width: 760px) {
+    
+    div#search-wrapper{
+      display:none;
+    }
+    
+    
+    
+  }
+  @media only screen and (max-width: 630px) {
+    
+    div#logo,div#search-wrapper{
+      display:none;
+    }
+    
+    
+    
+  }
